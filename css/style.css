@@ -17,9 +17,46 @@ p {
   margin: 0;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
 .list-reset {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  padding-top: 30px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.header-link {
+  margin-right: 52px;
+}
+
+.btn {
+  color: #fff;
+  padding: 15px 36px;
+  background: #3172B9;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
