@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -17,10 +21,15 @@ p {
   margin: 0;
 }
 
+body {
+  min-width: 1200px;
+  font-family: 'font', Helvetica, sans-serif;
+}
+
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .flex {
@@ -40,9 +49,28 @@ p {
   cursor: pointer;
 }
 
+.section-title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.section-descr {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.section-offset {
+  padding-top: 87px;
+  padding-bottom: 160px;
+}
+
 /* Header */
 .header {
-  padding-top: 30px;
+  padding: 36px 0; 
+}
+
+.header-container {
+  align-items: center;
 }
 
 .logo {
@@ -59,4 +87,64 @@ p {
   background: #3172B9;
   border-radius: 3px;
   text-transform: uppercase;
+}
+
+/* Hero-section */
+.hero {
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.hero-descr {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.hero-btn {
+  margin-bottom: 14px;
+}
+
+/* Services section */
+.services-title {
+  text-align: center;
+}
+
+.services-descr {
+  text-align: center;
+}
+
+.services-list-item {
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 270px;
+  outline: 1px solid coral;
+}
+
+.services-list-item:not(:nth-child(4n)) {
+  margin-right: 40px;
+}
+
+.services-icon-item {
+  margin-bottom: 25px;
+}
+
+.services-item-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.services-item-descr {
+  margin: 0;
+  text-align: center;
 }
